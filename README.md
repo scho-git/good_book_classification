@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # good_book_classification
 Model that classifies well-rated books based on a Goodreads dataset
 =======
@@ -125,4 +124,3 @@ Since the models are still underfitting, additional features could be added to i
 3. Better cleaning: tanh before normalization so the numbers are cleaner for the models to use. Deal with the missing features differently (lower the threshold) or add more genres.
 4. Add another book dataset with more information (language, different source, book revenues)
 5. Expand into a book recommendation system
->>>>>>> c1944bcda323ec9c1a1bea9924e30da541845b15
