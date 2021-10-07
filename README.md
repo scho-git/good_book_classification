@@ -1,6 +1,3 @@
-# good_book_classification
-Model that classifies well-rated books based on a Goodreads dataset
-=======
 # GOODREADS: AN ANALYSIS
 
 Reading has been known to be quite important in developing the mind; to say the least, it improves brain connectivity and a person’s communication skills. Many school education systems even implement some sort of reading into their programs. However, just because it’s a part of healthy development and some school curricula does not mean that reading books should be a chore and cannot be enjoyable. 
