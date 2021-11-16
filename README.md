@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# good_book_classification
-Model that classifies well-rated books based on a Goodreads dataset
-=======
 # GOODREADS: AN ANALYSIS
 
 Reading has been known to be quite important in developing the mind; to say the least, it improves brain connectivity and a person’s communication skills. Many school education systems even implement some sort of reading into their programs. However, just because it’s a part of healthy development and some school curricula does not mean that reading books should be a chore and cannot be enjoyable. 
@@ -125,4 +121,3 @@ Since the models are still underfitting, additional features could be added to i
 3. Better cleaning: tanh before normalization so the numbers are cleaner for the models to use. Deal with the missing features differently (lower the threshold) or add more genres.
 4. Add another book dataset with more information (language, different source, book revenues)
 5. Expand into a book recommendation system
->>>>>>> c1944bcda323ec9c1a1bea9924e30da541845b15
