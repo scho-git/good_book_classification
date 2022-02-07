@@ -102,6 +102,7 @@ None of the models performed outstandingly well, and some barely did better than
 |Baseline | 0.51, 0.50 | 0.001995 | 0.000996 |
 |Logistic Regression | 0.00, 0.67 | 0.333113 | 0.002986 |
 |Random Forest | 0.66, 0.64 | 56.12945 | 3.572085 |
+|XGBoost | 0.66, 0.63 | 0.024337 | 4.147428 |
 |Ada Boost | 0.64, 0.62 | 8.274668 | 0.652254 |
 |KNN | 0.60, 0.57 | 1.787197 | 23.685205 |
 
@@ -109,7 +110,7 @@ Note: 0 is denoted to be a bad book while 1 is categorized as a good book.
 
 From the above summary chart, logistic regression performed the fastest in both fit and prediction time. However, due to its low F-1 score for 0 (bad books), we can see that it uniformly predicted 1 for all of its predictions, which would not be a practical model. 
 
-The best performing model would be the random forest algorithm, with 0.66 and 0.64 F-1 scores for bad and good books, respectively. Although the fit time for the random forest is the longest one, the prediction time is much lower. Prediction time is more important given how much more often it would be run, compared to fitting the model. 
+The best performing model would be the random forest algorithm, with 0.66 and 0.64 F-1 scores for bad and good books, respectively. Closely behind is the XGBoost model with 0.66 and 0.63 F-1 scores. Since the performance is almost comparable, and the prediction time is much lower for the XGBoost model, for practicality in production, the XGBoost would probably be the preferred one. Prediction time is more important given how much more often it would be run, compared to fitting the model since predictions would be used more often than fitting the model every now and then. 
 
 The model's performance, however, is still not where I would like it to be, and there are a few things that could be done to improve the model. 
 
@@ -120,4 +121,5 @@ Since the models are still underfitting, additional features could be added to i
 2. Data vision to analyze the book cover features of the original dataset
 3. Better cleaning: tanh before normalization so the numbers are cleaner for the models to use. Deal with the missing features differently (lower the threshold) or add more genres.
 4. Add another book dataset with more information (language, different source, book revenues)
-5. Expand into a book recommendation system
+5. Expand into a book recommendation system and application
+6. Expand into an actual application where authors and publishing companies can see how their potential ideas fare
